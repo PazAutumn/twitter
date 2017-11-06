@@ -1,0 +1,70 @@
+html {
+	margin-top: -21px;
+}
+
+body {
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	background-image: url(../img/vintage_bike-wallpaper-1920x1080.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-family: "Roboto Mono", sans-serif;
+}
+
+#barra {
+	width: 100%;
+	height: auto;
+	background-color: #6AD2F3;
+	margin: 0 auto;
+}
+
+#barra h1 {
+	text-align: center;
+	color: white;
+}
+
+.container {
+	width: 40%;
+	height: auto;
+	background-color: white;
+	margin: 20px;
+	padding: 20px;
+	display: inline-block;
+	margin-left: 50px;
+}
+
+.container h4 {
+	color: #6AD2F3;
+}
+
+.msg {
+	width: 95%;
+	height: 60px;
+	padding: 14px;
+	border: none;
+	margin: 0 auto;
+	font-family: "Roboto Mono", sans-serif;
+}
+
+.msg, .char-left {
+    font-size: 12px;
+}
+
+.char-left {
+	margin: 0;
+  	text-align: right;
+}
+.warning {
+    color: #c00;
+}
+
+#btn {
+	border: none;
+	color: white;
+	width: 80px;
+	height: 30px;
+	background-color: #6CD2F5;
+	font-family: "Roboto Mono", sans-serif;
+	font-size: 12px;
+}
