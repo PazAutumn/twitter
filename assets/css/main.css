@@ -30,12 +30,16 @@ body {
 	background-color: white;
 	margin: 20px;
 	padding: 20px;
-	display: inline-block;
 	margin-left: 50px;
+	float: left;
 }
 
 .container h4 {
 	color: #6AD2F3;
+}
+
+.container hr {
+	color: #E0E0E0;
 }
 
 .msg {
@@ -49,6 +53,13 @@ body {
 
 .msg, .char-left {
     font-size: 12px;
+}
+
+textarea {
+	display: block;
+	resize: none;
+	font-family: "Roboto Mono", sans-serif;
+	font-size: 20px;
 }
 
 .char-left {
