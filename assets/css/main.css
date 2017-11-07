@@ -79,3 +79,15 @@ textarea {
 	font-family: "Roboto Mono", sans-serif;
 	font-size: 12px;
 }
+
+#cont {
+	width: 90%;
+	margin-left: 55px;
+	float: left;	
+}
+
+#cont div {
+	padding: 20px;
+	background-color: #FFF;
+	border-radius: 10px;
+}
