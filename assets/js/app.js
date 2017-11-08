@@ -1,4 +1,4 @@
-//contador de caracteres
+//contador de caracteres que no entendí :( )
 
 /*(function(){
   var msg = document.getElementsByClassName("msg")[0],
