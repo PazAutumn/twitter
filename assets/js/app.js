@@ -26,6 +26,7 @@ var textarea = document.getElementById('textarea');
 var span = document.getElementById('span');
 var botoncito = document.getElementById('btn');
 
+//contador en reversa
 textarea.onkeydown = function() {
     //rescatamos el valor del textArea
     var comment = document.getElementById('textarea').value;
@@ -57,7 +58,7 @@ textarea.onkeydown = function() {
 
     }
 
-    if (textarea.value.length < 0 || textarea.value.length === 140) {
+    if (textarea.length == 0 || textarea == null || textarea.length == 140) {
 
         botoncito.setAttribute("disabled", "disabled");
 
@@ -66,7 +67,6 @@ textarea.onkeydown = function() {
         botoncito.removeAttribute("disabled");
 
     }
-
 }
 
 //agrandador de textarea
@@ -96,6 +96,9 @@ textarea.addEventListener("focus", function() {
 var botoncito = document.getElementById('btn');
 
 botoncito.addEventListener('click', function() {
+	var counter = document.getElementById('counter-characters');
+	counter.innerHTML = 140;
+
     var textarea = document.getElementById('textarea').value;
     // el value sirve para tomar el valor del id comment
 
@@ -130,6 +133,7 @@ botoncito.addEventListener('click', function() {
 
     cont.appendChild(newComments);
 
+    
 
     /*validar que el mensaje tenga menos de 140 caracteres
 
