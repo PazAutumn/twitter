@@ -98,6 +98,16 @@ button:disabled {
 	opacity: 0.5;
 }
 
+#counter-characters {
+	float: right;
+}
+
+#counter-characters span {
+	line-height: 40px;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
 #cont {
 	width: 90%;
 	margin-left: 55px;
