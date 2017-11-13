@@ -42,23 +42,24 @@ textarea.onkeydown = function() {
 
     if (countdown <= 20) {
 
-        span.setAttribute("color","yellow");
+        counter.className = "yellow";
 
     }
 
     if (countdown <= 10) {
 
-        span.setAttribute("color","yellow");
+        counter.className = "orange";
 
     }
 
-    if (countdown < 0) {
+    if (countdown <= 0) {
 
-        span.setAttribute("color", "red");
-
+        counter.className = "red";
+        botoncito.setAttribute("disabled", "disabled");
+        return null
     }
 
-    if (countdown == 0 || countdown == null || countdown == 140) {
+    if (countdown === 0 || countdown === null || countdown === 140) {
 
         botoncito.setAttribute("disabled", "disabled");
 
@@ -70,21 +71,23 @@ textarea.onkeydown = function() {
 }
 
 //agrandador de textarea
-
+var botoncito = document.getElementById('btn');
 var textarea = document.getElementById("textarea");
 var limit = 200;
 
 textarea.oninput = function() {
+    
     textarea.style.height = "";
     textarea.style.height = Math.min(textarea.scrollHeight, 300) + "px";
-};
+    
+}
 
 //cambiar de color el botoncito
 var botoncito = document.getElementById('btn');
 var textarea = document.getElementById("textarea");
 
 textarea.addEventListener("focus", function() {
-    if (textarea.length < 0 || textarea.length === 140) {
+    if (textarea.length < 0 || textarea.value == "") {
         botoncito.setAttribute("disabled", "disabled");
     } else {
         botoncito.removeAttribute("disabled");
@@ -99,7 +102,8 @@ botoncito.addEventListener('click', function() {
 
 	//resetear el contador en reversa
 	var counter = document.getElementById('counter-characters');
-	counter.innerHTML = 140;
+	counter.innerHTML = 140;    
+    counter.className = "black";
 
     var textarea = document.getElementById('textarea').value;
     // el value sirve para tomar el valor del id comment

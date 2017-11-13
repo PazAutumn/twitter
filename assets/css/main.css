@@ -52,9 +52,7 @@ body {
 	font-family: "Roboto Mono", sans-serif;
 }
 
-.msg, .char-left {
-    font-size: 12px;
-}
+
 
 textarea {
 	display: block;
@@ -66,14 +64,6 @@ textarea {
 textarea:focus {
 	border-bottom: 4px solid #6AD2F3;
 }
-
-.char-left {
-	margin: 0;
-  	text-align: right;
-}
-/*.warning {
-    color: #c00;
-}*/
 
 #btn {
 	border: none;
@@ -119,4 +109,20 @@ button:disabled {
 	background-color: #FFF;
 	border-radius: 10px;
 	margin: 20px;
+}
+
+.yellow {
+	color: yellow;
+}
+
+.orange {
+	color: orange;
+}
+
+.red {
+	color: red;
+}
+
+.black {
+	color: black;
 }
