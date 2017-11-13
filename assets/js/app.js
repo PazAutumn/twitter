@@ -40,25 +40,25 @@ textarea.onkeydown = function() {
     var counter = document.getElementById('counter-characters');
     counter.innerHTML = countdown;
 
-    if (textarea.value.length < 120) {
+    if (countdown <= 20) {
 
         span.setAttribute("color","yellow");
 
     }
 
-    if (textarea.value.length < 130) {
+    if (countdown <= 10) {
 
         span.setAttribute("color","yellow");
 
     }
 
-    if (textarea.value.length < 0) {
+    if (countdown < 0) {
 
         span.setAttribute("color", "red");
 
     }
 
-    if (textarea.length == 0 || textarea == null || textarea.length == 140) {
+    if (countdown == 0 || countdown == null || countdown == 140) {
 
         botoncito.setAttribute("disabled", "disabled");
 
@@ -91,11 +91,13 @@ textarea.addEventListener("focus", function() {
     }
 })
 
-//agregar comentario
+//evento botón agregar comentario
 
 var botoncito = document.getElementById('btn');
 
 botoncito.addEventListener('click', function() {
+
+	//resetear el contador en reversa
 	var counter = document.getElementById('counter-characters');
 	counter.innerHTML = 140;
 
